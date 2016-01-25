@@ -1,0 +1,20 @@
+1.	Generate a sample demo project
+mvn archetype:generate > template.txt
+175, 240, 
+https://wiki.jenkins-ci.org/display/JENKINS/Meet+Jenkins
+
+LiquieDatabase
+https://tillias.wordpress.com/2012/11/10/unit-testing-and-integration-testing-using-junit-liquibase-hsqldb-hibernate-maven-and-spring-framework/ 
+SonarQuebe Setup
+https://lasithapetthawadu.wordpress.com/2014/05/03/configure-jenkins-with-sonarqube-for-static-code-analysis-and-integration/
+// Git
+https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+//Artifactory
+https://www.jfrog.com/confluence/display/RTF/Installing+on+Windows#InstallingonWindows-ManualInstallation
+admin/password
+
+Virtual Box
+https://www.virtualbox.org/wiki/Download_Old_Builds_4_3
+To download Puppet Learning VM v.3.7.1
+http://learning-puppet-packt.s3-website-eu-west-1.amazonaws.com/
+Importing the Puppet Learning VM into VirtualBox
