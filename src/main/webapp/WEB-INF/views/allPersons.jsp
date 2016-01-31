@@ -1,13 +1,13 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
-<%@ taglib tagdir="/WEB-INF/tags" prefix="mytags"%>
+<%@ taglib tagdir="/WEB-INF/tags" prefix="simpletags"%>
 <html>
 <head>
-<mytags:jquery />
-<mytags:style />
+<simpletags:jquery />
+<simpletags:style />
 </head>
 <body>
-<mytags:menu/>
+<simpletags:menu/>
 <h3>Persons</h3>
 <c:choose>
 	<c:when test="${fn:length(persons) gt 0}">
@@ -28,7 +28,7 @@
 	</c:when>
 	<c:otherwise>No persons</c:otherwise>
 </c:choose>
-<mytags:footer/>
+<simpletags:footer/>
 
 </body>
 </html>

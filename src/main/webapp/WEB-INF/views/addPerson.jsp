@@ -1,13 +1,13 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
-<%@ taglib tagdir="/WEB-INF/tags" prefix="mytags"%>
+<%@ taglib tagdir="/WEB-INF/tags" prefix="simpletags"%>
 <html>
 <head>
-<mytags:jquery />
-<mytags:style />
+<simpletags:jquery />
+<simpletags:style />
 </head>
 <body>
-<mytags:menu />
+<simpletags:menu />
 <h4>New Person</h4>
 <c:if test="${errors.errorCount gt 0}">
 	Errors!<br/>
@@ -20,6 +20,6 @@
 	type="text" name="name" /><br />
 <label for="name">Age:</label><input type="text" name="age" /><br />
 <input type="submit" /><input type="reset" /></form>
-<mytags:footer/>
+<simpletags:footer/>
 </body>
 </html>

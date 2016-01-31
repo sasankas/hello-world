@@ -20,19 +20,19 @@ import org.springframework.web.context.WebApplicationContext;
 
 
 /*@RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations={"classpath:/applicationContext.xml"})
+@ContextConfiguration(locations={"classpath:/spring-basic-context.xml"})
 @WebAppConfiguration("src/main/webapp")*/
 public class PersonControllerTestCase {
 	@Autowired
 	WebApplicationContext wac;
 	
-	//@Test
+//	@Test
 	public void f() throws UnsupportedEncodingException, Exception{
 		MockMvc mockMvc = MockMvcBuilders.webAppContextSetup(wac).build();
 		
 		System.out.println(
 				mockMvc.perform(
-						post("/login/auth")
+						post("simple-webapp/index.jsp")
 						.param("userName", "userName"))
 		.andReturn().getResponse().getContentAsString());
 	}
