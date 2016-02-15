@@ -9,7 +9,20 @@
 	
 
 $(document).ready(function() {
-	$('#example').DataTable();
+	$('#example').DataTable({
+		"paging": true,
+		"searching": true,
+		"stateSave": true,
+		rowReorder: true,
+		"orderFixed": {
+	        "pre": [ 1, 'desc' ],
+	        "post": [ 4, 'asc' ]
+	    },
+		"columnDefs": [
+		               { "orderable": false, "visible": false, "targets": 0, "searchable": false },
+		               { "orderable": false, "visible": false, "targets": 3 }
+		             ]
+	});
 } );
 
 	</script>
@@ -42,6 +55,22 @@ $(document).ready(function() {
             <tr>
                 <td>Tiger Nixon</td>
                 <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+            </tr>
+            <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect1</td>
+                <td>Edinburgh</td>
+                <td>61</td>
+                <td>2011/04/25</td>
+                <td>$320,800</td>
+            </tr>
+            <tr>
+                <td>Tiger Nixon</td>
+                <td>System Architect2</td>
                 <td>Edinburgh</td>
                 <td>61</td>
                 <td>2011/04/25</td>
