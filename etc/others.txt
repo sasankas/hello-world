@@ -18,3 +18,112 @@ https://www.virtualbox.org/wiki/Download_Old_Builds_4_3
 To download Puppet Learning VM v.3.7.1
 http://learning-puppet-packt.s3-website-eu-west-1.amazonaws.com/
 Importing the Puppet Learning VM into VirtualBox
+
+================================= Cloud set up ==============
+
+/usr/share/tomcat7
+sudo yum install tomcat7
+service tomcat7 start
+sudo yum install tomcat7-webapps tomcat7-admin-webapps
+
+
+Tomcat to the popular open source web server, Apache httpd. You can use mod_jk, the Tomcat redirector module,
+1.Defining Workers
+---------------------------------------------------
+worker.list=<a comma separated list of worker 
+# the list of workers
+  worker.list= worker1, worker2
+
+2.Workers Type
+---------------------------------------------------
+# Defines a worker named "local" that uses the ajpv12 protocol to forward requests to a Tomcat process.
+  worker.local.type=ajp12
+  # Defines a worker named "remote" that uses the ajpv13 protocol to forward requests to a Tomcat process.
+  worker.remote.type=ajp13
+  # Defines a worker named "loadbalancer" that loadbalances several Tomcat processes transparently.
+  worker.loadbalancer.type=lb
+
+3. Setting Worker Properties
+--------------------------
+worker.<worker name>.<property>=<property value>
+
+The ajp12 has been deprecated with Tomcat 3.3.x 
+ajp13 Worker properties
+
+
+
+sudo yum install mod_jk
+sudo yum install gcc*
+wget http://www.apache.org/dist/tomcat/tomcat-connectors/jk/tomcat-connectors-1.2.40-src.tar.gz
+tar -zxvf tomcat-connectors-1.2.40-src.tar.gz
+cd tomcat-connectors-1.2.40-src 
+cd native
+./configure --with-apxs=/usr/bin/apxs
+make && make install
+/usr/sbin/apachectl -v
+/etc/httpd/conf/httpd.conf
+/usr/lib64/httpd/modules/
+
+worker.list=worker1
+
+  # Set worker properties
+
+  worker.worker1.type=ajp13
+
+  worker.worker1.host=localhost
+
+  worker.worker1.port=8009
+
+yum install httpd-devel
+$> cd native
+$> ./configure --with-apxs=/usr/sbin/apxs (or where ever the apxs/apxs2 is)
+$> make
+$> su -c 'make install'
+
+in my case I installed apache via "yum install httpd" which does not include the apxs file
+The solution was to also "yum install httpd-devel"
+
+
+
+
+/usr/lib64/httpd/modules/mod_jk.so
+
+
+LoadModule jk_module modules/mod_jk.so
+JkWorkersFile /etc/httpd/conf/workers.properties
+JkLogFile "logs/mod_jk.log"
+JkLogLevel error
+JkMount /easywayserver loadbalancer
+JkMount /easywayserver/* loadbalancer
+
+worker
+-------------
+workers.tomcat_home=/tomcat
+workers.java_home=$JAVA_HOME
+ps=/
+worker.list=tomcat,loadbalancer
+
+worker.tomcat.port=8009
+worker.tomcat.host=localhost
+worker.tomcat.type=ajp13
+worker.tomcat.lbfactor=1
+
+worker.loadbalancer.type=lb
+worker.loadbalancer.balanced_workers=tomcat
+worker.loadbalancer.sticky_session=1
+
+
+http://www.easywayserver.com/apache-tomcat-integration.html
+http://book.seaside.st/book/advanced/deployment/deployment-apache/serving-files
+
+
+
+
+
+
+
+
+
+
+
+
