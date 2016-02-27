@@ -115,7 +115,7 @@ worker.loadbalancer.sticky_session=1
 
 http://www.easywayserver.com/apache-tomcat-integration.html
 http://book.seaside.st/book/advanced/deployment/deployment-apache/serving-files
-
+https://tomcat.apache.org/tomcat-6.0-doc/appdev/sample/
 
 
 
