@@ -126,8 +126,27 @@ http://www.easywayserver.com/apache-tomcat-integration.html
 http://book.seaside.st/book/advanced/deployment/deployment-apache/serving-files
 https://tomcat.apache.org/tomcat-6.0-doc/appdev/sample/
 
-
-
+=============================Latest changes=============
+#!/bin/bash
+yum update -y
+yum install -y httpd24 php56 mysql55-server php56-mysqlnd tomcat7
+yum install tomcat7-webapps tomcat7-admin-webapps
+service httpd start
+service tomcat7 start
+chkconfig httpd on
+chkconfig tomcat7 on
+groupadd www
+usermod -a -G www ec2-user
+chown -R root:www /var/www
+chmod 2775 /var/www
+find /var/www -type d -exec chmod 2775 {} +
+find /var/www -type f -exec chmod 0664 {} +
+echo "<?php phpinfo(); ?>" > /var/www/html/phpinfo.php
+echo "<? echo = 'OK' " > /var/www/html/heartbeat.php
+echo "<? echo(string)file_get_contents('http://169.254.169.254/latest/metadata/instance_id') ?>" > /var/www/html/instance.php
+chmod 2775 /usr/share/tomcat7
+find /usr/share/tomcat7 -type d -exec chmod 2775 {} +
+find /usr/share/tomcat7 -type f -exec chmod 0664 {} +
 
 
 
