@@ -152,8 +152,8 @@ wget http://www.apache.org/dist/tomcat/tomcat-connectors/jk/tomcat-connectors-1.
 tar -zxvf tomcat-connectors-1.2.40-src.tar.gz
 cd tomcat-connectors-1.2.40-src/native
 
-
-
+sudo  yum install mod24_proxy_html -y
+https://wiki.apache.org/httpd/TomcatReverseProxy
 
 
 
