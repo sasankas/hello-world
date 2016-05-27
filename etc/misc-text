@@ -1,0 +1,11 @@
+public CalendarUser getCurrentUser() {
+    SecurityContext context = SecurityContextHolder.getContext(); 
+    Authentication authentication = context.getAuthentication();
+    if (authentication == null) {
+      return null;
+    }
+
+    String email = authentication.getName();
+    return calendarService.findUserByEmail(email);
+  }
+  
