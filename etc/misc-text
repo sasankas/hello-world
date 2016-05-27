@@ -9,3 +9,7 @@ public CalendarUser getCurrentUser() {
     return calendarService.findUserByEmail(email);
   }
   
+  import java.security.Principal;
+  public String login(Principal p) {
+		return "login";
+	}
