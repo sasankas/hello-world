@@ -13,3 +13,7 @@ public CalendarUser getCurrentUser() {
   public String login(Principal p) {
 		return "login";
 	}
+	
+<http>
+   <custom-filter position="FORM_LOGIN_FILTER" ref="myFilter" />
+</http>	
