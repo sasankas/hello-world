@@ -17,3 +17,6 @@ public CalendarUser getCurrentUser() {
 <http>
    <custom-filter position="FORM_LOGIN_FILTER" ref="myFilter" />
 </http>	
+
+mvn dependency:sources
+mvn dependency:resolve -Dclassifier=javadoc
