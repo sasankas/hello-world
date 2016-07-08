@@ -1,0 +1,1185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: project.xml,v 1.67 2006/07/24 06:20:28 kausiks Exp $ --><!-- $Revision: 1.67 $ --><!-- $Date: 2006/07/24 06:20:28 $ --><!--
+ - +=======================================================================+
+ - |                                                                       |
+ - |          Copyright (C) 2000-2004 Nomura Securities Co., Ltd.          |
+ - |                          All Rights Reserved                          |
+ - |                                                                       |
+ - |    This document is the sole property of Nomura Securities Co.,       |
+ - |    Ltd. No part of this document may be reproduced in any form or     |
+ - |    by any means - electronic, mechanical, photocopying, recording     |
+ - |    or otherwise - without the prior written permission of Nomura      |
+ - |    Securities Co., Ltd.                                               |
+ - |                                                                       |
+ - |    Unless required by applicable law or agreed to in writing,         |
+ - |    software distributed under the License is distributed on an        |
+ - |    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,       |
+ - |    either express or implied.                                         |
+ - |                                                                       |
+ - +=======================================================================+
+--><project xmlns="http://maven.apache.org/maven" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://maven.apache.org/maven">
+
+
+    <!-- the version of maven's project object model -->
+    <pomVersion>3</pomVersion>
+
+
+    <!-- a unique id and short name for this project -->
+    <groupId>xxxxxxxx</groupId>
+    <artifactId>xxxxxxxx-nsi</artifactId>
+    <name>xxxxxxxx New York</name>
+
+    <!-- The version of the project under development -->
+    <currentVersion>rel20060531</currentVersion>
+
+    <!-- The versions of the project that have been released (or are in progress) -->
+    <versions>
+        <version>
+            <id>${pom.artifactId}-${pom.currentVersion}</id>
+            <name>${pom.currentVersion}</name>
+            <tag>HEAD</tag>
+        </version><version>
+            <id>${pom.artifactId}-rel20060531</id>
+            <name>rel20060531</name>
+            <tag>rel20060531</tag>
+        </version><version>
+            <id>${pom.artifactId}-rel20060429</id>
+            <name>rel20060429</name>
+            <tag>rel20060429</tag>
+        </version><version>
+            <id>${pom.artifactId}-rel20060316</id>
+            <name>rel20060316</name>
+            <tag>rel20060316</tag>
+        </version><version>
+            <id>${pom.artifactId}-rel20060203</id>
+            <name>rel20060203</name>
+            <tag>rel20060203</tag>
+        </version><version>
+            <id>${pom.artifactId}-rel20051228</id>
+            <name>rel20051228</name>
+            <tag>rel20051228</tag>
+        </version><version>
+            <id>${pom.artifactId}-rel20051115</id>
+            <name>rel20051115</name>
+            <tag>rel20051115</tag>
+        </version>
+        <version>
+             <id>${pom.artifactId}-rel20051006</id>
+             <name>rel20051006</name>
+             <tag>rel20051006</tag>
+        </version>
+        <version>
+             <id>${pom.artifactId}-rel20050916</id>
+             <name>rel20050916</name>
+             <tag>rel20050916</tag>
+        </version>        
+      <version>
+             <id>${pom.artifactId}-rel20050831</id>
+             <name>rel20050831</name>
+             <tag>rel20050831</tag>
+        </version>        
+       <version>
+             <id>${pom.artifactId}-rel20050802</id>
+             <name>rel20050802</name>
+             <tag>rel20050802</tag>
+        </version>         
+        <version>
+             <id>${pom.artifactId}-rel20050715</id>
+             <name>rel20050715</name>
+             <tag>rel20050715</tag>
+        </version>         
+       <version>
+             <id>${pom.artifactId}-rel20050630</id>
+             <name>rel20050630</name>
+             <tag>rel20050630</tag>
+        </version>        
+        <version>
+             <id>${pom.artifactId}-rel20050610</id>
+             <name>rel20050610</name>
+             <tag>rel20050610</tag>
+        </version>
+        <version>
+      <id>${pom.artifactId}-rel20050429</id>
+      <name>rel20050429</name>
+      <tag>rel20050429</tag>
+        </version>
+        <version>
+      <id>${pom.artifactId}-rel20050331</id>
+      <name>rel20050331</name>
+      <tag>rel20050331</tag>
+        </version>
+        <version>
+      <id>${pom.artifactId}-rel20050228</id>
+      <name>rel20050228</name>
+      <tag>rel20050228</tag>
+        </version>
+        <version>
+      <id>${pom.artifactId}-rel20050202</id>
+      <name>rel20050202</name>
+      <tag>rel20050202</tag>
+        </version>
+        <version>
+      <id>${pom.artifactId}-rel20050114</id>
+      <name>rel20050114</name>
+      <tag>rel20050114</tag>
+        </version>
+        <version>
+      <id>${pom.artifactId}-rel20041215</id>
+      <name>rel20041215</name>
+      <tag>rel20041215</tag>
+        </version>
+        <version>
+     <id>${pom.artifactId}-rel20041130</id>
+     <name>rel20041130</name>
+     <tag>rel20041130</tag>
+        </version>
+        <version>
+            <id>${pom.artifactId}-rel20041111</id>
+            <name>rel20041111</name>
+            <tag>rel20041111</tag>
+        </version>
+    </versions>
+
+    <!--branches>
+        <branch>
+            <tag/>
+        </branch>
+    </branches-->
+
+
+    <!-- details about the organization that 'owns' the project -->
+    <organization>
+        <name>Nomura Research Institute</name>
+        <url>http://www.nri.co.jp/english/index.html</url>
+        <logo>/images/logo-nri.gif</logo>
+    </organization>
+
+    <!-- the year the project started -->
+    <inceptionYear>2000</inceptionYear>
+
+    <!-- default package base -->
+    <package>com.nri.xxxxxxxx.*</package>
+
+    <!-- the project home page -->
+    <url>http://${pom.siteAddress}/site</url>
+
+    <description>
+        Started in ${pom.inceptionYear}, ${pom.name} is the
+        ${pom.artifactId.substring(6)} component of ${pom.groupId}.
+    </description>
+
+    <siteAddress>xxxxxxxxny.in.anshinsoft.com</siteAddress>
+    <siteDirectory>/home/projects/xxxxxxxx/webroot/html/site</siteDirectory>
+
+    <distributionSite>${pom.siteAddress}</distributionSite>
+    <distributionDirectory>/home/projects/xxxxxxxx/ftproot/dist</distributionDirectory>
+
+    <issueTrackingUrl>http://sysveda.dynalias.com:9000/scarab/issues/</issueTrackingUrl>
+
+    <!-- the version control repository and http url for online access
+         the connection element has the form:
+         scm:<system>:<system specific connection string>
+    -->
+    <repository>
+        <connection>scm:cvs:pserver:anoncvs@xxxxxxxx-cvs.in.anshinsoft.com:/home/projects/xxxxxxxx/cvsroot/xxxxxxxxny:xxxxxxxx/devel</connection>
+        <developerConnection>scm:cvs:ext:indrajitr@xxxxxxxx-cvs.in.anshinsoft.com:/home/projects/xxxxxxxx/cvsroot/xxxxxxxxny:xxxxxxxx/devel</developerConnection>
+        <url>https://${pom.siteAddress}/viewcvs/xxxxxxxx/devel</url>
+    </repository>
+
+
+    <!-- any mailing lists for the project -->
+    <mailingLists>
+        <mailingList>
+            <name>xxxxxxxx Development Mailing List</name>
+            <subscribe>xxxxxxxx-ny-subscribe@anshinsoft.com</subscribe>
+            <unsubscribe>xxxxxxxx-ny-unsubscribe@anshinsoft.com</unsubscribe>
+            <archive>${pom.url}/list/archives/xxxxxxxx-ny</archive>
+        </mailingList>
+    </mailingLists>
+
+
+    <!-- who the developers are for the project -->
+    <developers>
+        <developer>
+            <name>Tohru Watanabe</name>
+            <id>tohru</id>
+            <email>t4-watanabe@nri.co.jp</email>
+            <organization>${pom.organization.name}</organization>
+            <roles>
+                <role>manager</role>
+            </roles>
+            <url>${pom.organization.url}</url>
+            <timezone>+9.00</timezone>
+        </developer>
+        <developer>
+            <name>Debasish Ghosh</name>
+            <id>debasishg</id>
+            <email>debasishg@anshinsoft.com</email>
+            <organization>Anshinsoft Corporation</organization>
+            <roles>
+                <role>manager</role>
+                <role>developer</role>
+            </roles>
+            <url>http://www.anshinsoft.com/</url>
+            <timezone>+5.50</timezone>
+        </developer>
+        <developer>
+            <name>Ramanendu Chatterjee</name>
+            <id>ramanenduc</id>
+            <email>ramanenduc@anshinsoft.com</email>
+            <organization>Anshinsoft Corporation</organization>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <url>http://www.anshinsoft.com/</url>
+            <timezone>+5.50</timezone>
+        </developer>
+        <developer>
+            <name>Maulindu Chatterjee</name>
+            <id>maulinduc</id>
+            <email>maulinduc@anshinsoft.com</email>
+            <organization>Anshinsoft Corporation</organization>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <url>http://www.anshinsoft.com/</url>
+            <timezone>+5.50</timezone>
+        </developer>
+        <developer>
+            <name>Biswadeep Biswas</name>
+            <id>biswadeepb</id>
+            <email>biswadeepb@anshinsoft.com</email>
+            <organization>Anshinsoft Corporation</organization>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <url>http://www.anshinsoft.com/</url>
+            <timezone>+5.50</timezone>
+        </developer>
+        <developer>
+            <name>Chirantan Kundu</name>
+            <id>chirantank</id>
+            <email>chirantank@anshinsoft.com</email>
+            <organization>Anshinsoft Corporation</organization>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <url>http://www.anshinsoft.com/</url>
+            <timezone>+5.50</timezone>
+        </developer>
+        <developer>
+            <name>Indrajit Raychaudhuri</name>
+            <id>indrajitr</id>
+            <email>indrajitr@anshinsoft.com</email>
+            <organization>Anshinsoft Corporation</organization>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <url>http://www.anshinsoft.com/</url>
+            <timezone>+5.50</timezone>
+        </developer>
+        <developer>
+            <name>Rajib Palchaudhuri</name>
+            <id>rajibp</id>
+            <email>rajibp@anshinsoft.com</email>
+            <organization>Anshinsoft Corporation</organization>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <url>http://www.anshinsoft.com/</url>
+            <timezone>+5.50</timezone>
+        </developer>
+        <developer>
+            <name>Sudipta Das</name>
+            <id>sudiptad</id>
+            <email>sudiptad@anshinsoft.com</email>
+            <organization>Anshinsoft Corporation</organization>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <url>http://www.anshinsoft.com/</url>
+            <timezone>+5.50</timezone>
+        </developer>
+        <developer>
+            <name>Malayaj Das</name>
+            <id>malayajd</id>
+            <email>malayajd@anshinsoft.com</email>
+            <organization>Anshinsoft Corporation</organization>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <url>http://www.anshinsoft.com/</url>
+            <timezone>+5.50</timezone>
+        </developer>
+        <developer>
+            <name>Goutam De</name>
+            <id>goutamd</id>
+            <email>goutamd@anshinsoft.com</email>
+            <organization>Anshinsoft Corporation</organization>
+            <roles>
+                <role>visual artist</role>
+            </roles>
+            <url>http://www.anshinsoft.com/</url>
+            <timezone>+5.50</timezone>
+        </developer>
+    </developers>
+
+
+    <!-- who the contributors are for the project -->
+    <contributors>
+        <contributor>
+            <name>Peter Scott</name>
+            <id>peters</id>
+            <email>peter.scott@uk.nomura.com</email>
+            <organization>Nomura UK</organization>
+            <roles>
+                <role />
+            </roles>
+        </contributor>
+    </contributors>
+
+
+    <!-- license location for presentation in site -->
+    <licenses>
+        <license>
+            <name>${pom.organization.name} Software License</name>
+            <url>/LICENSE.txt</url>
+            <distribution>manual</distribution>
+        </license>
+    </licenses>
+
+
+    <!-- common jar files the project is dependent on -->
+    <dependencies>
+
+        <!-- ~ Run-time Dependencies (web-apps and console-apps) ~~~~~~~~~~~ -->
+        <dependency>
+            <!-- for repro -->
+            <groupId>ant</groupId>
+            <artifactId>ant</artifactId>
+            <version>1.5.3-1</version>
+            <url>http://ant.apache.org/</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+        
+
+        <dependency>
+            <!-- for repro -->
+            <groupId>avalon-framework</groupId>
+            <artifactId>avalon-framework-api</artifactId>
+            <version>4.2.0</version>
+            <url>http://avalon.apache.org/</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+                
+        <dependency>
+            <!-- for repro -->
+            <groupId>avalon-framework</groupId>
+            <artifactId>avalon-framework-impl</artifactId>
+            <version>4.2.0</version>
+            <url>http://avalon.apache.org/</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <!-- for repro -->
+            <groupId>batik</groupId>
+            <artifactId>batik-awt-util</artifactId>
+            <version>1.5</version>
+            <url>http://xml.apache.org/batik</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <!-- for repro -->
+            <groupId>batik</groupId>
+            <artifactId>batik-bridge</artifactId>
+            <version>1.5</version>
+            <url>http://xml.apache.org/batik</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <!-- for repro -->
+            <groupId>batik</groupId>
+            <artifactId>batik-ext</artifactId>
+            <version>1.5</version>
+            <url>http://xml.apache.org/batik</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <!-- for repro -->
+            <groupId>batik</groupId>
+            <artifactId>batik-gvt</artifactId>
+            <version>1.5</version>
+            <url>http://xml.apache.org/batik</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <!-- for repro -->
+            <groupId>batik</groupId>
+            <artifactId>batik-svg-dom</artifactId>
+            <version>1.5</version>
+            <url>http://xml.apache.org/batik</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <!-- for repro -->
+            <groupId>batik</groupId>
+            <artifactId>batik-util</artifactId>
+            <version>1.5</version>
+            <url>http://xml.apache.org/batik</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <!-- for velocity -->
+            <groupId>velocity</groupId>
+            <artifactId>velocity</artifactId>
+            <version>1.4</version>
+            <jar>velocity-1.4-dev.jar</jar>
+            <url>http://ant.apache.org/</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency> 
+
+        <dependency>
+            <!-- for PDF modifier. Used to skip back page numbering for hard copy confirmation. -->
+            <groupId>itext</groupId>
+            <artifactId>itext</artifactId>
+            <version>1.4.2</version>
+            <jar>itext-1.4.2.jar</jar> 
+            <url>http://www.lowagie.com/iText/</url>
+            <properties>
+                <war.bundle>false</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>        
+        
+        <dependency>
+            <groupId>bsh</groupId>
+            <artifactId>bsh-core</artifactId>
+            <version>2.0b2</version>
+            <url>http://www.beanshell.org/</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>1.7.0</version>
+            <url>http://jakarta.apache.org/commons/beanutils</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>3.1</version>
+            <url>http://jakarta.apache.org/commons/collections</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-dbutils</groupId>
+            <artifactId>commons-dbutils</artifactId>
+            <version>1.0</version>
+            <url>http://jakarta.apache.org/commons/dbutils</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-digester</groupId>
+            <artifactId>commons-digester</artifactId>
+            <version>1.5</version>
+            <url>http://jakarta.apache.org/commons/digester</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-discovery</groupId>
+            <artifactId>commons-discovery</artifactId>
+            <version>0.2</version>
+            <url>http://jakarta.apache.org/commons/discovery</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+        
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.0</version>
+            <url>http://jakarta.apache.org/commons/fileupload</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>false</console.bundle>
+            </properties>
+        </dependency>        
+
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.1</version>
+            <url>http://jakarta.apache.org/commons/lang</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.0.4</version>
+            <url>http://jakarta.apache.org/commons/logging</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-pool</groupId>
+            <artifactId>commons-pool</artifactId>
+            <version>1.2</version>
+            <url>http://jakarta.apache.org/commons/pool</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-primitives</groupId>
+            <artifactId>commons-primitives</artifactId>
+            <version>1.0</version>
+            <url>http://jakarta.apache.org/commons/primitives</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <groupId>connector</groupId>
+            <artifactId>connector-api</artifactId>
+            <jar>connector-api.jar</jar>
+            <url>http://java.sun.com/j2ee/connector</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <groupId>ibm-mq</groupId>
+            <artifactId>mq</artifactId>
+            <version>5.300 - j530-L021008</version>
+            <jar>com.ibm.mq.jar</jar>
+            <url>=</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <groupId>ibm-mq</groupId>
+            <artifactId>mqbind</artifactId>
+            <version>5.300 - j530-L021008</version>
+            <jar>com.ibm.mqbind.jar</jar>
+            <url>http://www.ibm.com/mqseries</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <groupId>ibm-mq</groupId>
+            <artifactId>mqjms</artifactId>
+            <version>5.300 - j530-L021008</version>
+            <jar>com.ibm.mqjms.jar</jar>
+            <url>http://www.ibm.com/mqseries</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <!-- for repro -->
+            <groupId>jai</groupId>
+            <artifactId>jai-codec</artifactId>
+            <jar>jai_codec.jar</jar>
+            <url>http://java.sun.com/products/jai</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <!-- for repro -->
+            <groupId>jai</groupId>
+            <artifactId>jai-core</artifactId>
+            <jar>jai_core.jar</jar>
+            <url>http://java.sun.com/products/jai</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <groupId>jdom</groupId>
+            <artifactId>jdom</artifactId>
+            <version>b10</version>
+            <url>http://www.jdom.org/</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <!-- for repro -->
+            <groupId>jimi</groupId>
+            <artifactId>jimi</artifactId>
+            <jar>JimiProClasses.jar</jar>
+            <url>http://java.sun.com/products/jimi</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <groupId>jms</groupId>
+            <artifactId>jms</artifactId>
+            <version>1.1</version>
+            <jar>jms.jar</jar>
+            <url>http://java.sun.com/products/jms</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+            <!-- Jar taken from Hibernate lib -->
+        </dependency>
+
+        <dependency>
+            <groupId>jta</groupId>
+            <artifactId>jta</artifactId>
+            <version>1.0.1B</version>
+            <jar>jta.jar</jar>
+            <url>http://java.sun.com/products/jta</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+            <!-- Jar taken from Hibernate lib -->
+        </dependency>
+        <dependency>
+            <groupId>activation</groupId>
+            <artifactId>activation</artifactId>
+            <version>1.0.2</version>
+            <jar>activation.jar</jar>
+            <url>http://java.sun.com/products/javamail</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+        <dependency>
+            <groupId>javamail</groupId>
+            <artifactId>mailapi</artifactId>
+            <version>1.3.3_01</version>
+            <jar>mailapi.jar</jar>
+            <url>http://java.sun.com/products/javamail</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+        <dependency>
+            <groupId>javamail</groupId>
+            <artifactId>mail</artifactId>
+            <version>1.3.3_01</version>
+            <jar>mail.jar</jar>
+            <url>http://java.sun.com/products/javamail</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+        <dependency>
+            <groupId>commons-email</groupId>
+            <artifactId>commons-email</artifactId>
+            <version>1.0</version>
+            <url>http://jakarta.apache.org/commons/email</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+        <dependency>
+            <groupId>oracle</groupId>
+            <artifactId>ojdbc14</artifactId>
+            <version>10.1.0.2.0</version>
+            <jar>ojdbc14.jar</jar>
+            <url>http://otn.oracle.com/</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+	<dependency>
+	    <groupId>oracle</groupId>
+	    <artifactId>ons</artifactId>
+	    <version>1.0</version>
+	    <jar>ons.jar</jar>
+	    <url>http://otn.oracle.com/</url>
+	    <properties>
+		<war.bundle>true</war.bundle>
+		<console.bundle>true</console.bundle>
+	    </properties>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.8</version>
+            <url>http://logging.apache.org/log4j</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <!-- for repro -->
+            <groupId>poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>2.5.1-final-20040804</version>
+            <url>http://jakarta.apache.org/poi</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <groupId>repro</groupId>
+            <artifactId>repro</artifactId>
+            <version>1.1</version>
+            <url>http://www.anshinsoft.com/reproSolutions.html</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <groupId>repro</groupId>
+            <artifactId>repro-chart</artifactId>
+            <version>1.0</version>
+            <url>http://www.anshinsoft.com/reproSolutions.html</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <groupId>repro</groupId>
+            <artifactId>repro-fop</artifactId>
+            <version>1.0</version>
+            <url>http://www.anshinsoft.com/reproSolutions.html</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <!-- ~ Run-time Dependencies (web-apps only) ~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <dependency>
+            <groupId>antlr</groupId>
+            <artifactId>antlr</artifactId>
+            <version>2.7.2</version>
+            <url>http://www.antlr.org/</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-validator</groupId>
+            <artifactId>commons-validator</artifactId>
+            <version>1.1.3-dev</version>
+            <url>http://jakarta.apache.org/commons/validator</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <groupId>struts</groupId>
+            <artifactId>struts</artifactId>
+            <version>1.2.0</version>
+            <url>http://struts.apache.org/</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <groupId>struts</groupId>
+            <artifactId>struts-el</artifactId>
+            <version>1.2.0</version>
+            <url>http://struts.apache.org/</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <groupId>displaytag</groupId>
+            <artifactId>displaytag</artifactId>
+            <version>1.0-rc1</version>
+            <url>http://www.displaytag.org/</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <groupId>taglibs</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.1.0</version>
+            <jar>jstl.jar</jar>
+            <properties>
+                <war.bundle>true</war.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <groupId>taglibs</groupId>
+            <artifactId>standard</artifactId>
+            <version>1.1.0</version>
+            <jar>standard.jar</jar>
+            <properties>
+                <war.bundle>true</war.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+        <groupId>jaxen</groupId>
+        <artifactId>jaxen</artifactId>
+        <version>1.1-beta-4</version>
+        <url>http://www.ibiblio.org/maven/jaxen/distributions/</url>
+        <properties>
+        <war.bundle>true</war.bundle>
+        </properties>
+        </dependency>
+
+        <dependency>
+        <groupId>dom4j</groupId>
+        <artifactId>dom4j</artifactId>
+        <version>1.4-dev-8</version>
+        <url>http://www.dom4j.org</url>
+        <properties>
+        	<war.bundle>true</war.bundle>
+        	<console.bundle>true</console.bundle>
+        </properties>
+        </dependency>
+
+        <!-- ~ Run-time Dependencies (console-apps only) ~~~~~~~~~~~~~~~~~~~ -->
+        <dependency>
+            <groupId>commons-cli</groupId>
+            <artifactId>commons-cli</artifactId>
+            <version>1.0</version>
+            <url>http://jakarta.apache.org/commons/cli</url>
+            <properties>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>1.0</version>
+            <url>http://jakarta.apache.org/commons/io</url>
+            <properties>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <groupId>dbunit</groupId>
+            <artifactId>dbunit</artifactId>
+            <version>2.1</version>
+            <url>http://dbunit.sourceforge.net</url>
+            <properties>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <groupId>regexp</groupId>
+            <artifactId>regexp</artifactId>
+            <version>1.3</version>
+            <url>http://jakarta.apache.org/regexp</url>
+            <properties>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <groupId>xerces</groupId>
+            <artifactId>xercesImpl</artifactId>
+            <version>2.6.2</version>
+            <url>http://xml.apache.org/xerces2-j</url>
+            <properties>
+                <console.bundle.endorsed>true</console.bundle.endorsed>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <groupId>xml-apis</groupId>
+            <artifactId>xml-apis</artifactId>
+            <jar>xml-apis.jar</jar>
+            <url>http://xml.apache.org/xerces2-j</url>
+            <properties>
+                <console.bundle.endorsed>true</console.bundle.endorsed>
+            </properties>
+        </dependency>
+
+        <!-- ~ Compile-time Dependencies (web-apps and console-apps) ~~~~~~~ -->
+        <!-- <dependency/> -->
+
+        <!-- ~ Compile-time Dependencies (web-apps only) ~~~~~~~~~~~~~~~~~~~ -->
+        
+
+        <!-- WAS Security dependency -->
+        <dependency>
+            <groupId>ibm-was</groupId>
+            <artifactId>sas</artifactId>
+            <jar>sas.jar</jar>
+            <url>http://www.ibm.com/websphere</url>
+        </dependency>
+
+        <dependency>
+            <groupId>servletapi</groupId>
+            <artifactId>servletapi</artifactId>
+            <version>2.3</version>
+            <url>http://java.sun.com/products/j2ee</url>
+        </dependency>
+
+        <!-- ~ Compile-time Dependencies (console-apps only) ~~~~~~~~~~~~~~~ -->
+        <!-- <dependency/> -->
+
+        <!-- ~ Testing-time Dependencies (web-apps and console-apps) ~~~~~~~ -->
+        <dependency>
+            <groupId>dbunit</groupId>
+            <artifactId>dbunit</artifactId>
+            <version>2.1</version>
+            <url>http://dbunit.sourceforge.net/</url>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <url>http://www.junit.org/</url>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit-addons</artifactId>
+            <version>1.4</version>
+            <url>http://junit-addons.sourceforge.net/</url>
+        </dependency>
+
+        <!-- ~ DTDDoc-build-time Dependencies (web-apps and console-apps) ~~ -->
+        <dependency>
+            <groupId>dtddoc</groupId>
+            <artifactId>DTDDoc</artifactId>
+            <jar>DTDDoc.jar</jar>
+            <url>http://dtddoc.sourceforge.net/</url>
+        </dependency>
+
+        <dependency>
+            <groupId>dtddoc</groupId>
+            <artifactId>dtdparser</artifactId>
+            <jar>dtdparser120.jar</jar>
+            <url>http://dtddoc.sourceforge.net/</url>
+        </dependency>
+
+        <dependency>
+            <groupId>pwcrules</groupId>
+            <artifactId>pwcrules</artifactId>
+            <jar>pwcrules.jar</jar>
+            <url>http://www.pwc.com/</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+
+        <dependency>
+            <groupId>adpapi</groupId>
+            <artifactId>adpapi</artifactId>
+            <jar>ADPAPI.jar</jar>
+            <url>http://xxxxxxxxny.in.anshinsoft.com/maven/adpapi/jars/</url>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+        </dependency>
+    <dependency>
+      <groupId>aspectj</groupId>
+      <artifactId>aspectjrt</artifactId>
+      <version>1.5</version>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+    </dependency>
+
+    <dependency>
+      <groupId>aspectj</groupId>
+      <artifactId>aspectjtools</artifactId>
+      <version>1.5</version>
+            <properties>
+                <war.bundle>true</war.bundle>
+                <console.bundle>true</console.bundle>
+            </properties>
+    </dependency>
+
+    </dependencies>
+
+
+    <!-- build information for the project -->
+    <build>
+        <nagEmailAddress>anshin-devel-xxxxxxxx-ny@anshinsoft.com</nagEmailAddress>
+        <sourceDirectory>src/java</sourceDirectory>
+        <unitTestSourceDirectory>src/test</unitTestSourceDirectory>
+        <integrationUnitTestSourceDirectory />
+        <aspectSourceDirectory />
+
+        <resources>
+
+            <resource>
+                <directory>${basedir}/src/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                    <include>**/*.xsl</include>
+                    <include>**/*.dtd</include>
+                    <include>**/*.properties</include>
+                    <include>META-INF/**</include>
+                </includes>
+            </resource>
+
+        </resources>
+
+        <unitTest>
+            <!--
+            <includes>
+                <include>**/*Test.java</include>
+            </includes>
+            <excludes>
+                <exclude>**/TestContext.java</exclude>
+            </excludes>
+            -->
+
+            <resources>
+
+                <resource>
+                    <directory>${basedir}/src/test</directory>
+                    <includes>
+                        <include>**/*.xml</include>
+                        <include>**/*.xsl</include>
+                        <include>**/*.properties</include>
+                        <include>**/messages/*.swift</include>
+                        <include>META-INF/**</include>
+                    </includes>
+                </resource>
+
+            </resources>
+
+        </unitTest>
+
+    </build>
+
+    <!-- <properties/> -->
+
+    <reports>
+        <!-- default report listing:
+        <report>maven-jdepend-plugin</report>
+        <report>maven-checkstyle-plugin</report>
+        <report>maven-changes-plugin</report>
+        <report>maven-changelog-plugin</report>
+        <report>maven-developer-activity-plugin</report>
+        <report>maven-file-activity-plugin</report>
+        <report>maven-license-plugin</report>
+        <report>maven-javadoc-plugin</report>
+        <report>maven-jxr-plugin</report>
+        <report>maven-junit-report-plugin</report>
+        <report>maven-linkcheck-plugin</report>
+        <report>maven-tasklist-plugin</report>
+        -->
+        <report>maven-multichanges-plugin</report>
+        <report>maven-license-plugin</report>
+        <report>xxxxxxxx-dtddoc-plugin</report>
+        <report>maven-faq-plugin</report>
+    </reports>
+
+</project>
