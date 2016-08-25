@@ -22,3 +22,4 @@ mvn dependency:sources
 mvn dependency:resolve -Dclassifier=javadoc
 mvn eclipse:eclipse -DdownloadSources=true
 mvn archetype:generate> template.txt
+https://github.com/mpetersen/aes-example
